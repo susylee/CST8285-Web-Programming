@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>Courses</title>
+    <link rel="stylesheet" type="text/css" href="./asgmt1.css">
+</head>
+
+<body>
+    <!-- the third page -->
+<!-- header and navigation bar -->
+    <header id="topHeader-index"> Course Information
+        <nav class="mainNav">
+            <a href="index.html">Main</a>
+            <a href="resume.html">Resume</a>
+            <a href="courses.html">Courses</a>
+        </nav>
+    </header>
+
+    <br>
+    <!-- search bar section with an area that filter by course & level -->
+    <div class="searchBar">
+        <select name="sort" id="sort">
+            <option value="Select">Select</option>
+            <option value="Course">Course</option>
+            <option value="Level">Level</option>
+            <option value="LowToHigh">Low to High</option>
+            <option value="High to Low">High to Low</option>
+        </select>
+        <input type="search" placeholder="Search here" required>
+        <input type="button" id="s_button" value="Search"> <br> <!-- input type: search-->
+    </div>
+    <br><br>
+
+
+    <!-- section for level 1 using flex boxes-->
+    <section class="courseTerm">
+        <h2>Level 1 - Spring 2022</h2> <br>
+        <nav class="headerNav">
+            <div class="flexbox-container">
+                <div class="flexbox-item-1"><img src="Pic/Java1.PNG" alt="java_image">
+                    <p><strong>Intro to Computer Programming</strong><br>
+                        CST8116<br>
+                        Basic OOP(Java) <br>
+                    </p>
+                </div>
+                <div class="flexbox-item-2"><img src="Pic/DB.PNG" alt="DB_image">
+                    <p><strong>Intro to Database</strong><br>
+                        CST8215<br>
+                        Modelling, SQL(MySQL) <br>
+                    </p>
+                </div>
+                <div class="flexbox-item-3"> <img src="Pic/Essentials.png" alt="Essential_image">
+                    <p><strong>Computer Essentials</strong><br>
+                        CST8101<br>
+                        Hardware, Virtualization(Linux) <br>
+                    </p>
+                </div>
+                <div class="flexbox-item-4"> <img src="Pic/Comm1.PNG" alt="communication_image">
+                    <p><strong>Communications1</strong><br>
+                        ENL1813T<br>
+                        Strengthen Communication skills <br>
+                    </p>
+                </div>
+                <div class="flexbox-item-5"> <img src="Pic/Achiev.PNG" alt="Achieving_image">
+                    <p><strong>Achieving Success</strong><br>
+                        CST8300<br>
+                        Strategies to continued development <br>
+                    </p>
+                </div>
+                <div class="flexbox-item-6"> <img src="Pic/Math.PNG" alt="Math_image">
+                    <p><strong>Tech Math</strong><br>
+                        MAT8001C<br>
+                        Math for Computer Science <br>
+                    </p>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <br>
+
+    <!-- section for level 2 using grid boxes-->
+    <section class="courseTerm">
+        <h2> Level 2 - Fall 2022</h2> <br>
+        <nav class="headerNav">
+            <div class="grid-container">
+                <div class="grid-item grid-item-1"> <img src="Pic/Java2.PNG" alt="Java2_image">
+                    <p><strong>Intro to Computer Programming</strong><br>
+                        CST8116<br>
+                        Java <br>
+                    </p>
+                </div>
+                <div class="grid-item grid-item-2"> <img src="Pic/DB2.png" alt="DB2_image">
+                    <p><strong>Database Systems</strong><br>
+                        CST2355<br>
+                        SQL <br>
+                    </p>
+                </div>
+
+                <div class="grid-item grid-item-3"> <img src="Pic/lab1_SuYeounLee.PNG" alt="Linux_image">
+                    <p><strong>Operating Systems Fund</strong><br>
+                        CST8102<br>
+                        GNU/Linux <br>
+                    </p>
+                </div>
+                <div class="grid-item grid-item-4"><img src="Pic/Web1.PNG" alt="Web_image">
+                    <p><strong>Web Programming</strong><br>
+                        CST8285<br>
+                        HTML/CSS/JavaScript <br>
+                    </p>
+                </div>
+                <div class="grid-item grid-item-5"><img src="Pic/Comm2.PNG" alt="Communication2_image">
+                    <p> <strong>Technical Communications</strong><br>
+                        ENL2019T<br>
+                        For Energy Technology<br>
+                    </p>
+                </div>
+                <div class="grid-item grid-item-6"><img src="Pic/Dinner.jpg" alt="DinnerParty_image">
+                    <p><strong>Dinner Party</strong><br>
+                        HOS2288<br>
+                        General Elective Course <br>
+                    </p>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <br>
+    <hr>
+      <!-- footer and link to college -->
+    <footer id="courseFooter">
+        <a href="https://www.algonquincollege.com/ro/">Algonquin College Hompage</a>
+    </footer>
+
+
+</body>
+
+</html>

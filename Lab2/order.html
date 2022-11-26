@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="width=device-width, initial-scale=1.0, Su Yeoun Lee">
+    <style>
+        #prod_table {
+            border: 1px solid black;
+        }
+
+        #prod_table th {
+            border: 1px solid black;
+        }
+
+        #prod_table td {
+            border: 1px solid black;
+        }
+
+        .card_info {
+            border-collapse: separate;
+            border-spacing: 7px;
+        }
+    </style>
+    <title>Order Form</title>
+</head>
+
+<body>
+    <form name="myform" id="myform">
+        <fieldset>
+            <h3 style="color:orange">Order Form</h3>
+            <fieldset>
+                <legend>Basic Information</legend>
+                <table>
+                    <tr>
+                        <td>Name: </td>
+                        <td><input type="text" name="name" id="name" value="Su Yeoun" size="30" disabled></td>
+
+                    </tr>
+                    <tr>
+                        <td>Email: </td>
+                        <td><input type="text" name="email" id="email" value="lee00823@algonquinlive.com" size="30">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Address: </td>
+                        <td><textarea name="address" id="address" rows="6" cols="25"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>Postcode: </td>
+                        <td><input type="text" name="zipcode" id="zipcode"></td>
+                    </tr>
+                </table>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Product Information</legend>
+                <table style="width: 38%;" id="prod_table">
+                    <tr>
+                        <th>Product</th>
+                        <th>Part Number</th>
+                        <th>Quantity</th>
+                        <th>Unit Price</th>
+                        <th style="width:180px">Subtotal</th>
+                    </tr>
+                    <tr>
+                        <td>Box</td>
+                        <td>AC100</td>
+                        <td></td>
+                        <td>$5</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Coffee Table</td>
+                        <td>AC200</td>
+                        <td></td>
+                        <td>$100</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Chair</td>
+                        <td>AC300</td>
+                        <td></td>
+                        <td>$150</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Desk</td>
+                        <td>AC400</td>
+                        <td></td>
+                        <td>$120</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Coffee Table</td>
+                        <td>AC500</td>
+                        <td></td>
+                        <td>$130</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" style="text-align:right">
+                            Total:
+                        </td>
+                        <td></td>
+                    </tr>
+                </table>
+            </fieldset>
+
+            <h4>Credit Card Information</h4>
+            Card Type:
+            <table class="card_info">
+                <tr>
+                    <td>
+                        <input type="radio" name="cardtype" value="Mastercard">Mastercard
+                    </td>
+                    <td>
+                        Card Number: <input type="text" name="cardtype" id="cardtype"> <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="cardtype" value="Visa">Visa
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="cardtype" value="Gift Card">Gift Card<br></td>
+                    <td>
+                        Expiry Date: <input type="date" name="date" id="date">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h4>Delivery Address: </h4>
+                    </td>
+                    <td>
+                        <textarea name="delivery" id="delivery" rows="6" cols="25"></textarea>
+                    </td>
+                </tr>
+
+            </table>
+            <br>
+            <div>
+                <input type="submit" value="Send Order">&nbsp;
+                <input type="reset" value="Clear Form">
+            </div>
+        </fieldset>
+    </form>
+</body>
+
+</html>

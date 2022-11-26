@@ -1,0 +1,67 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #f4f1de;
+}
+
+header {
+    font-weight: bold;
+    font-size: 30px;
+    color: #3d405b;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+header,
+.quoteText,
+.author {
+    font-family: sans-serif;
+}
+
+.quote {
+    position: relative;
+}
+
+.quoteText {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 50px;
+    font-weight: bold;
+    font-size: 25px;
+    border: 3pt solid #e07a5f;
+    border-radius: 15pt;
+    background-color: #f2cc8f;
+    height: 200px;
+    text-align: center;
+}
+
+
+#author {
+    position: absolute;
+    bottom: 25%;
+    left: 40%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-style: italic;
+    font-size: 18px;
+    background-color: #f5d1a0;
+    border: 2px dotted rgb(152, 149, 149);
+    height: 15px;
+    width: 20%;
+
+}
+
+button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #ffe4ab;
+    border-radius: 15px;
+    border: solid #dbb27b 3px;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+.buttonArea {
+    text-align: center;
+    margin-top: 40px;
+}
