@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html>
+
+<script>
+function reveal(el){
+console.log(el);// reveal(el.parentElement)
+
+}
+function display(c){
+    console.log(c.value);
+}
+</script>
+<!-- this refere to button element -->
+<button onclick="reveal(this)">Click here!</button>
+<br>
+<br>
+<!-- this refere to input text element -->
+<input type="text" id="ll" onchange="display(this)" ></input>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!-- the validation rules :
+	1- email must takes the following form: one or more characters @ one or maore character the . the one or more character
+	2- the terms must be checked -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript  form validation</title>
+	
+	<!-- <script src="script.js" defer></script> -->
+	<script src="script.js" defer></script>
+	<style>
+		*{
+			font-size: x-large;
+		}
+.warning{
+	color: red;
+}
+	</style>
+	
+
+</head>
+<body>
+	 
+	<div class="container">
+		<h1> Subscription</h1>
+		<hr>
+		<form name="form" action="" onsubmit="return validate();" method="get">
+			
+			<div class="form-group">
+				<label for="email">Email Address</label>
+				<input type="text" class="form-control" name="email" id="email" placeholder="Email">
+				
+			</div>
+			
+			<div class="form-check">
+				<input type="checkbox" class="form-check-input" name="terms" id="terms">
+				<label class="form-check-label" for="terms">I agree to the terms and conditions</label>
+				
+			</div>
+			<button type="submit" class="btn">Submit</button>
+			<button type="reset" class="btn">Reset</button>
+		</form>
+	</div>
+</body>
+</html>

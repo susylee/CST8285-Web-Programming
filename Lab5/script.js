@@ -20,8 +20,8 @@ function validate() {
         newDiv.setAttribute('style', "color:red");
         newDiv.className = "newClass1";
         document.querySelector('.textfield:first-child').appendChild(newDiv);
-
-        // return false;
+        alert('email invalid')
+        return false;
     }
 
     // 2. login name should be non-empty (do not use a required tag in HTML) and less than 20 characters long.
@@ -37,7 +37,8 @@ function validate() {
         newDiv.setAttribute('style', "color:red");
         newDiv.className = "newClass2";
         document.querySelector('.textfield:nth-child(2)').appendChild(newDiv);
-      //  return false;
+        alert('name invalid')
+        return false;
     }
 
     // 3. password should be at least 6 characters long 
@@ -58,7 +59,7 @@ function validate() {
         newDiv.innerText = 'X Password should be at least 6 characters: 1 uppercase, 1 lowercase.';
         newDiv.setAttribute('style', "color:red");
         document.querySelector('.textfield:nth-child(3)').appendChild(newDiv);
-        //return false;
+        return false;
     }
 
     // 5. Ensure that both the password fields have the same value and are not blank
@@ -75,7 +76,8 @@ function validate() {
         newDiv.innerText = 'X Please retype password.';
         newDiv.setAttribute('style', "color:red");
         document.querySelector('.textfield:nth-child(4)').appendChild(newDiv);
-       // return false;
+        alert('pass invalid')
+       return false;
     }
 
 
@@ -93,11 +95,11 @@ function validate() {
         newSpan.setAttribute('style', "color:red;");
 
         document.getElementById("labelTerms").appendChild(newSpan);
-
-        return false;
+        alert('term invalid')
+      return false;
     }
 
- 
+ return true;
 
 } // end of validate()
 
