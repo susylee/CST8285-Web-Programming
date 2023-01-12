@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="container">
+        <div id="column1">
+            <div>1</div>
+            <div id="box2">2</div>
+            <div>3</div>
+        </div>
+        <div id="column2">
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+        </div>
+    </div>
+
+    <script>
+        console.log(container.children);// HTMLCollection(2) [div#column1, div#column2, column1: div#column1, column2: div#column2]
+        console.log(column1.firstElementChild); //<div> 1 </div>
+        console.log(container.firstElementChild.firstElementChild);// <div>1</div>
+        console.log(box2.previousElementSibling); // <div>1</div>
+        console.log(box2.nextElementSibling); //<div>3</div>
+        console.log(column2.lastElementChild);// <div>6</div>
+        console.log(box2.parentNode.parentNode); //<div id="container">
+        
+    </script>
+</body>
+
+</html>
